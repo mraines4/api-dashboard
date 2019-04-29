@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Weather from './Weather';
 import Fortune from './Fortune';
+import Joke from './Joke';
 
 class App extends React.Component {
   render() {
@@ -14,6 +15,9 @@ class App extends React.Component {
           </div>
           <div className="widget">
             <Fortune />
+          </div>
+          <div className="widget">
+            <Joke />
           </div>
         </div>
       </div>

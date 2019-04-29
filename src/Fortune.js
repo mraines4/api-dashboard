@@ -5,22 +5,22 @@ class Fortune extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            fortune: {}
+            fortune: ''
         }
     }
 
     async componentDidMount() {
         const fortuneData = await Axios.get('http://my-little-cors-proxy.herokuapp.com/http://yerkee.com/api/fortune')
-        console.log(fortuneData.data)
+        // console.log(fortuneData.data)
         this.setState({
-            fortune: fortuneData.data
+            fortune: fortuneData.data.fortune
         })
     }
 
     render() {
         return (
             <div>
-                <h2>Fortune: {this.state.fortune.fortune}</h2>
+                <h2>Fortune: {this.state.fortune}</h2>
             </div>
         )
     }
