@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+import Axios from 'axios';
 
 class Weather extends React.Component {
     constructor(props) {
@@ -10,8 +10,8 @@ class Weather extends React.Component {
     }
 
     async componentDidMount() {
-        const weatherData = await axios.get('http://api.openweathermap.org/data/2.5/weather?q=Atlanta,us&units=imperial&APPID=1efd23d575e7f6ab1b69c24ba772d747')
-        console.log(weatherData.data)
+        const weatherData = await Axios.get('http://api.openweathermap.org/data/2.5/weather?q=Atlanta,us&units=imperial&APPID=1efd23d575e7f6ab1b69c24ba772d747')
+        // console.log(weatherData.data)
         this.setState({
             weather: weatherData.data
         })

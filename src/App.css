@@ -30,6 +30,10 @@
   color: #61dafb;
 }
 
+.box {
+  display: flex;
+}
+
 .widget {
   border: 5px solid white;
 }
