@@ -19,7 +19,7 @@ class Weather extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="widget">
                 <h1>{this.state.weather.name}</h1>
                 <h3>{this.state.weather.main ? Math.round(this.state.weather.main.temp) : null} °F</h3>
                 <h3>{this.state.weather.weather ? this.state.weather.weather[0].description : null}</h3>

@@ -18,7 +18,7 @@ class Joke extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="widget">
                 <h2>Joke: {this.state.joke}</h2>
             </div>
         )

@@ -19,7 +19,7 @@ class Fortune extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="widget">
                 <h2>Fortune: {this.state.fortune}</h2>
             </div>
         )
